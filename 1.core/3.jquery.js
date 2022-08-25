@@ -27,9 +27,9 @@ $('a.external:first')
 $('li:odd')
 /*
 <ul>
+    <li></li> --
     <li></li>
-    <li></li>
-    <li></li>
+    <li></li> --
     <li></li> // 줄 수가 아닌 생성된 순서 기준이다.
 <ul>
 */
@@ -51,7 +51,7 @@ $('a[rel$="thinger"]')
 <a rel='so-thinger'></a>
 */
 
-$('div.foo').has('p') // foo class가 있는 div를 찾자, 그 중에 p를 갖고 있는 객체를 찾자.
+$('div.foo').has('p') // foo class가 있는 div를 찾고 그 중에 p를 갖고 있는 객체를 찾자.
 // has 다음에 나오는 para는 자식이다.
 /*
 <div class ='foo'>
@@ -73,7 +73,7 @@ $('ul li').not('.currnet') // li에서 current class(속성)을 갖고있지 않
 
 $('ul li').eq(1) // function이 return하는 것은 collection이다!
 
-$('form :buitton')
+$('form :button')
 /*
     <form>
         <button></button>
