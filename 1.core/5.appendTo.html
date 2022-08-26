@@ -1,20 +1,21 @@
 <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
 <script>
-$(() => {
-    // $('div').appendTo($('hr'))
-    // 과제: 위를 append() 로 refactoring 하라.
-    $('hr').append($('div'))
-})
+    $(() => {
+        //$('div').appendTo($('hr'))
+        //div원소개수대로 첫번째hr에 포함시키고 두번째도 포함시킨다.
+        //과제: 위를 append() 로 refactoring하라
+        $('hr').append($('div'))
+    })
 </script>
 
 <style>
-    div{
+    div {
         background-color: orange;
         width: 5rem;
         height: 5rem;
         border-radius: 2.5rem;
     }
-
+    
     hr {
         border: .1rem solid;
     }

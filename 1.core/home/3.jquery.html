@@ -1,16 +1,18 @@
-<script src='https://code.jquery.com/jquery-3.6.0.js'></script>
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
 <script>
-let msg = 'div.foo가 '
+    let msg = 'div.foo가'
 
-$(() => {
-    /*
-    if($('div.foo').length) msg += '있다.'
-    else msg += '없다.'
-    */
-    msg += $('div.foo').length ? '있다.' : '없다.'
-
-    console.log(msg)
-})
+    $(() => {
+       /* if($('div.foo').length) {
+            msg = msg + '있습니다.'
+        }else{
+            msg = msg + '없습니다.'
+        }*/
+       msg += $('div.foo').length ? '있다.' : '없다.'
+        
+        console.log(msg)
+    })
 </script>
 
-<div class='fool'></div>
+
+    <div class='foo1'></div>

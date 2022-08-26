@@ -18,25 +18,22 @@ $('#contents ul.people li')
 </div>
 */
 
-$('a.external:first')
+$('a.external:first') // 첫번째 class
 /*
 <a class='external'></a>
 <a class='external'></a>
 */
 
-$('li:odd')
+$('tr:odd')
 /*
-<ul>
-    <li></li> --
-    <li></li>
-    <li></li> --
-    <li></li> // 줄 수가 아닌 생성된 순서 기준이다.
-<ul>
+<tr/>-- // 줄 수가 아닌 생성된 순서 기준이다.
+<tr/>
+<tr/>--
 */
 
 $('div:visible')
 
-$('div:gt(1)') // 1 을 초과하는 index
+$('div:gt(1)') // 1번째 index보다 큰거부터 (0,1,2)
 /*
 <div></div>
 <div></div>
@@ -69,9 +66,13 @@ $('ul li').filter('.currnet') // li에서 current class(속성)을 갖고있는 
 </ul>
 */
 
-$('ul li').not('.currnet') // li에서 current class(속성)을 갖고있지 않은 것. 64와 반의
+$('ul li').not('.currnet') 
+// li에서 current class(속성)을 갖고있지 않은 것. 64와 반의
+//<li>중에 <li class='current'>가 없는 element를 찾아라.
 
-$('ul li').eq(1) // function이 return하는 것은 collection이다!
+$('ul li').eq(1) 
+//1번 index를 찾아라. (0~n)
+// function이 return하는 것은 collection이다!
 
 $('form :button')
 /*
@@ -84,7 +85,7 @@ $('form :button')
 $('form :radio') // <input type='radio'/>
 $('form :checkbox') // <input type='checkbox'/>
 
-$('form :checked') // 마우스로 입력하는 것중 체크된 
+$('form :checked') // 마우스로 입력하는 것중 체크된 것
 /*
 <input type='radio'/>
 <input type='checkbox'/>
