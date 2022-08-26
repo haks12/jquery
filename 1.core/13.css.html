@@ -1,0 +1,15 @@
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script>
+$(() => {
+    console.log($('h1').css('font-size'))
+    console.log($('h1.big').css('font-size', '3rem')) // world가 3배 커짐
+    $('h1.big').css({
+        'front-size': '4rem',
+        color: 'red'
+    })
+})
+</script>
+  
+<h1>HELLO</h1>
+<h1 class='big'>WORLD</h1>
+<h1 class='red'>JAVA</h1>

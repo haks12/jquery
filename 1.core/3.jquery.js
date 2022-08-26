@@ -24,12 +24,21 @@ $('a.external:first') // 첫번째 class
 <a class='external'></a>
 */
 
-$('tr:odd')
+$('li:odd') // index 가 짝수번째
 /*
-<tr/>-- // 줄 수가 아닌 생성된 순서 기준이다.
-<tr/>
+<ul>
+    <li></li> // 줄 수가 아닌 생성된 순서 기준이다.
+    <li></li> --
+    <li></li>
+    <li></li> -- 
+*/
+$('tr:odd') // index 가 홀수번째
+/*
+<tr/>-- 
+<tr/> 
 <tr/>--
 */
+
 
 $('div:visible')
 

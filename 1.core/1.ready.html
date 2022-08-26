@@ -1,10 +1,10 @@
 <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
 <script>
-    jQuery(document).ready(() => $('body').append('<p>one</p>'))
+    jQuery(document).ready(() => $('body').append('<p>one</p>')) // append는 파라미터로 받은 객체를 생성한다.
 
-    $(document).ready(() => $('body').append('<p>two</p>'))
+    $(document).ready(() => $('body').append('<p>two</p>')) // append는 파라미터로 받은 객체를 body '안'에 넣는다.
 
-    let readyFn = () => $('body').append('<p>three</p>')
+    let readyFn = () => $('body').append('<p>three</p>') // append는 rendering function이다.
     $(document).ready(readyFn)
 
     $(() => $('body').append('<p>four</p>'))

@@ -1,17 +1,15 @@
 <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
 <script>
 $(() => {
-    $('ul').append('<li>item</li>').append('<li>')
+    let times = []
+    for(let i = 0; i < 10; i++)
+    item.push(`<li>item${i}</li>`)
 
-    $('ul', { 
-        html: '<li></li>'
-    })
-
+    $(items.join('')).appendTo('ul')
 })
 </script>
 
 <ul>
-
 </ul>
 <!-- 과제: 
     아래와 같은 ul을 만들어라.
