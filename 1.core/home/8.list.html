@@ -1,11 +1,14 @@
 <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
 <script>
 $(() => {
-    let times = []
+    /*
     for(let i = 0; i < 10; i++)
-    item.push(`<li>item${i}</li>`)
-
-    $(items.join('')).appendTo('ul')
+    $('ul').append(`<li>item ${i}</li>`)
+    */
+   let items = []
+   for(let i = 0; i < 10; i++)
+    items.push(`<li>item ${i}</li>`)
+   $(items.join('')).appendTo('ul')
 })
 </script>
 
