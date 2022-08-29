@@ -1,18 +1,21 @@
 <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
 <script>
-    $(() => {
-        console.log($('h1').html())
+$(() => {
+     console.log($('h1').html())
 
-        $('footer').html('<mark>foot</mark>')
-        console.log($('footer').html())
+    $('footer').html('<mark>foot</mark>')
+     console.log($('footer').html())
 
-        console.log($('header').find('h1').eq(1).html())
-        $('header').find('h1').eq(1).html('<hr>')
+    console.log($('header').find('h1').eq(1).html())
+    $('header').find('h1').eq(1).html('<hr>')
 
-        $('ul').find('li').eq(2).html('index: 2').end()
-            .eq(3).html('index: 3').end()
-            .eq(4).html('index: 4')
-    })
+    $('ul').find('li').eq(2).html('index: 2').end()
+    .eq(3).html('index: 3').end()
+    .eq(4).html('index: 4')
+
+    $('h1').text('Hi')
+    console.log($('h1').text())
+}) // html 은 rendering function 이다.
 </script>
 
 <header>

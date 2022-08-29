@@ -131,4 +131,4 @@ $('form input[name="gender"]:radio') // ':'앞의 스페이스는 자식관계 �
 
 $('form :reset') // <input type='reset'/>
 
-$('form: submit') // <input type='submit'/>
+$('form :submit') // <input type='submit'/>
