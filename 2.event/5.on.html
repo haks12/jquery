@@ -5,19 +5,19 @@ $(() => {
         mouseenter: function() {
             $(this).removeClass().addClass('circle mouseenter')
         },
-        // 과제: method 표기법으로 mouseleave handler 를 작성하라.
-        //       handler는 background 색을 없앤다.
+        //과제: method 표기법으로 mouseleave handler를 작성
+        //     handler는 backfround 색을 없앤다
         mouseleave() {
-            $(this).removeClass().addClass('circle mouseleace')
+            $(this).removeClass().addClass('circle mouseleave')
         }
-    
-}, '.circle')
+    }, '.circle')
 
-// $('button').on('click', () => $('#wrap').append($('.circle')))
-// $('button').on('click', () => $('#wrap').append($('.circle').clone()))
-// 과제: create 버튼을 누를 때마다, 새로운 원 하나가 append 되도록 하라.
-// $('button').on('click', () => $('#wrap').append($('.circle').eq(0).clone()))
-$('button').on('click', () => $('#wrap').append($('.circle').first().clone()))
+    //$('button').on('click', () => $('#wrap').append($('.circle')))
+    //$('button').on('click', () => $('#wrap').append($('.circle').clone()))
+    //과제: create 버튼을 누를 때마다. 새로운 원 하나가 append 되도록 하라.
+   // $('button').on('click', () => $('#wrap').append($('<div[class="circle"]></div>')))
+   //$('button').on('click', () => $('#wrap').append($('.circle').first().clone()))
+   $('button').on('click', () => $('#wrap').append($('.circle').eq(0).clone()))
 })
 </script>
 
@@ -44,13 +44,13 @@ $('button').on('click', () => $('#wrap').append($('.circle').first().clone()))
     }
 
     .mouseleave {
-        background: ''
+        background: '';
     }
 </style>
+
 <button type='button'>create</button>
 
 <div id='wrap'>
-    <div class='circle'> </div>
+    <div class='circle'></div>
     <div class='square'></div>
-   
 </div>

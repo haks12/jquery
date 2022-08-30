@@ -5,7 +5,7 @@ $(() => {
     // 과제: one 메세지가 1초 뒤에 사라지도록 하라.
     $('#one').click(() => $('span').text('one').show().fadeOut(1000)) // show통해 주어객체가 나타난 후 없어진다.
 
-    // $('#two').click(() => $('#one').trigger('click')) // user는 two버튼은 클릭했지만 one버튼을 클릭한 츠리거
+    // $('#two').click(() => $('#one').trigger('click')) // user는 two버튼은 클릭했지만 one버튼을 클릭한 트리거
     $('#two').click(() => $('#one').click())
 })
 </script>

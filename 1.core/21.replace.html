@@ -1,31 +1,29 @@
 <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
 <script>
 $(() => {
-    let greet = 'hello world'
+    let greet = ' Hello world '
     log(greet.replace(' ', ''))
     log(greet.replaceAll(' ', ''))
     log(greet.replace(/\s/g, ''))
-    log(greet.replace(/^\s/g, '')) // 머리부분 space
-    log(greet.replace(/\s$/g, '')) // 꼬리 space
-    log(greet.replace(/^\s|\s$/g, '')) // 머리부분 or 꼬리 space
+    log(greet.replace(/^\s$/g, ''))
+    log(greet.replace(/\s$/g, ''))//문자 뒤에 trim을 제거
+    log(greet.replace(/^\s|\s$/g, ''))
 
     greet = '1-2-3,4,5'
     console.log(greet.replace(/-/g, ''))
-    console.log(greet.replace(/,/g, ''))
+    console.log(greet.replace(/\,/g, ''))
     console.log(greet.replace(/[-,]/g, ''))
 
     greet = '1-,2-,3'
-    console.log(greet.replace(/-,/g,''))
+    console.log(greet.replace(/-,/g, ''))
 
     greet = 'hello\nworld'
-    console.log(greet)
-    // 과제: helloworld 가 출력되도록 하라.
-    console.log(greet.replace(/\n\g, ''))
+    //과제: helloworld가 출력되게하라
+    console.log(greet.replace(/\n/g, ''))
     
 })
-    
-    function log(str) {
-        console.log('|' + str + '|')
-    }
+
+function log(str) {
+    console.log('|' + str + '|')
+}
 </script>
-    

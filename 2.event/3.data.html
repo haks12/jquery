@@ -3,10 +3,12 @@
 $(() => {
     $('button').click('abel', e => {
         let userName = $('input').val()
-        if(userName == e.data) {
-            $('span').text(`valid: ${e.data}`).show().fadeOut(3000)
-            $('form').submit()
-        } else $('span').text(` invalid: ${userName}`)
+        if(userName == e.data){
+            $('span').text(` valid: ${e.data}`).show().fadeOut(3000)
+           // $('form').submit()
+        } else {
+            $('span').text(` invalid: ${userName}`)
+        }
     })
 })
 </script>
